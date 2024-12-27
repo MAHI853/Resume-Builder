@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+        <div class="container">
+            <div class="details">
+                <div class="head">
+                    <h1>PERSONAL DETAILS</h1>
+                </div>
+                <div class="form">
+                    <input type="text" id="name1" class="input-group__input" placeholder="Your Name">
+                    <input type="text" id="jobT1" class="input-group__input" placeholder="Your Job Tittle">
+                    <input type="text" id="contact" class="input-group__input" placeholder="Your Contact">
+                    <input type="text" id="mail" class="input-group__input" placeholder="Your Gmail">
+                    <input type="text" id="address" class="input-group__input" placeholder="Your Address">
+                    <label for="dob1">Date of Birth</label>
+                    <input type="date" id="dob1" class="input-group__input">
+                    <input type="file" id="photo" class="input-group__input" placeholder="Your Photo">
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">
+                    <h1>PROFESSIONAL DETAILS</h1>
+                </div>
+                <div class="form">
+                    <input type="text" id="obj1" class="input-group__input" placeholder="Objective">
+                    <input type="text" id="exp" class="input-group__input" placeholder="Experience">
+                    <input type="text" id="edu" class="input-group__input" placeholder="Education">
+                    <label for="Sdate">START-DATE</label>
+                    <input type="date" id="Sdate" class="input-group__input">
+                    <label for="Edate">END-DATE</label>
+                    <input type="date" id="Edate" class="input-group__input">
+                    <input type="text" id="Lan1" class="input-group__input" placeholder="Language-1">
+                    <input type="text" id="Lan2" class="input-group__input" placeholder="Language-2">
+                </div>
+            </div>
+            <div class="details">
+                <div class="head">
+                    <h1>PROFESSIONAL SKILLS</h1>
+                </div>
+                <div class="form">
+                    <input type="text" id="skill1" class="input-group__input" placeholder="Skill-1"> 
+                    <input type="text" id="skill2" class="input-group__input" placeholder="Skill-2"> 
+                    <input type="text" id="skill3" class="input-group__input" placeholder="Skill-3"> 
+                    <input type="text" id="skill4" class="input-group__input" placeholder="Skill-4"> 
+                    <input type="text" id="skill5" class="input-group__input" placeholder="Skill-5"> 
+                    <label for="layoutSelect">Select Resume Layout:</label>
+                    <select id="layoutSelect">
+                        <option value="layout1">Layout 1</option>
+                        <option value="layout2">Layout 2</option>
+                        <option value="layout3">Layout 3</option>
+                    </select>
+                    <button type="button" onclick="genr()" class="btn">Generate</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="none">
+        <div class="resume-layout layout1">
+            <div class="resume-container1">
+                <div class="left-column1">
+                <div class="profile-pic1">
+                    <img class="preview" src="" alt="Image Preview" style="display:none;">
+                </div>
+                <div class="contact1">
+                    <h3>Contact</h3>
+                    <p class="number">📞 Phone</p>
+                    <p class="email">📧 Email</p>
+                    <p class="location">📍 Location</p>
+                </div>
+                <div class="dob1">
+                    <h3>DOB</h3>
+                    <p class="dob2">DD/MM/YYYY</p>
+                </div>
+                <div class="education1">
+                    <h3>Education</h3>
+                    <p  class="education"></p>
+                    <p>Start-Date - End-Date</p>
+                    <p>
+                        <span class="sdate"></span>
+                        <span class="edate"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="right-column1">
+                <div class="name">
+                    <p class="name2"></p>
+                    <p class="jobT2"></p>
+                </div>
+                <div class="about1">
+                    <h3>About</h3>
+                    <p class="obj2">Write about yourself here.</p>
+                </div>
+                <div class="experience1">
+                    <h3>Experience</h3>
+                    <div class="timeline1">
+                        <div class="event">
+                            <p class="experience">Experience </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills1">
+                    <h3>Skills</h3>
+                    <p class="skill-1">Skill 1</p>
+                    <p class="skill-2">Skill 2</p>
+                    <p class="skill-3">Skill 3</p>
+                    <p class="skill-4">Skill 4</p>
+                    <p class="skill-5">Skill 5</p>
+                </div>
+                <div class="languages1">
+                    <h3>Languages</h3>
+                    <p class="language1">Language 1</p>
+                    <p class="language2">Language 2</p>
+                </div>
+            </div>
+        </div>   
+</div>
+
+
+
+<div class="resume-layout layout2">
+    <div class="resume-container2">
+        <div class="header2">
+            <div class="profile-pic2">
+                <img class="preview" src="" alt="Profile Picture">
+            </div>
+            <div class="contact2">
+                <h1 class="name2"></h1>
+                <p>📞 <span class="number"></span> | 📧 <span class="email"></span> | 📍 <span class="location"></span></p>
+            </div>
+        </div>
+        <div class="main-content2">
+            <div class="left-column2">
+                <section>
+                    <h3>DOB</h3>
+                    <p class="dob2">DD/MM/YYYY</p>
+                </section>
+                <section>
+                    <h3>Education</h3>
+                    <p class="education"></p>
+                    <p>Start-Date - End-Date</p>
+                    <p>
+                        <span class="sdate"></span> - <span class="edate"></span>
+                    </p>
+                </section>
+                <section>
+                    <h3>Languages</h3>
+                    <p class="language1">Language 1</p>
+                    <p class="language2">Language 2</p>
+                </section>
+            </div>
+            <div class="right-column2">
+                <section>
+                    <h3>About</h3>
+                    <p class="obj2">Write about yourself here.</p>
+                </section>
+                <section>
+                    <h3>Experience</h3>
+                    <ul>
+                        <li class="experience">Experience</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Skills</h3>
+                    <p class="skill-1">Skill 1</p>
+                    <p class="skill-2">Skill 2</p>
+                    <p class="skill-3">Skill 3</p>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="resume-layout layout3">
+    <div class="resume-container3">
+        <div class="header3">
+            <div class="profile-pic3">
+                <img class="preview" src="" alt="Profile Picture">
+            </div>
+            <h1 class="name2"></h1>
+        </div>
+        <div class="cards3">
+            <div class="card3">
+                <h3>Contact</h3>
+                <p>📞 <span class="number"></span></p>
+                <p>📧 <span class="email"></span></p>
+                <p>📍 <span class="location"></span></p>
+            </div>
+            <div class="card3">
+                <h3>About</h3>
+                <p class="obj2">Write about yourself here.</p>
+            </div>
+            <div class="card3">
+                <h3>Experience</h3>
+                <ul>
+                    <li class="experience">Experience</li>
+                </ul>
+            </div>
+            <div class="card3">
+                <h3>Education</h3>
+                <p class="education"></p>
+                <p>Start-Date - End-Date</p>
+                <p>
+                    <span class="sdate"></span> - <span class="edate"></span>
+                </p>
+            </div>
+            <div class="card3">
+                <h3>Skills</h3>
+                <p class="skill-1">Skill 1</p>
+                <p class="skill-2">Skill 2</p>
+                <p class="skill-3">Skill 3</p>
+            </div>
+            <div class="card3">
+                <h3>Languages</h3>
+                <p class="language1">Language 1</p>
+                <p class="language2">Language 2</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+.container{
+    padding-top: 50px;
+    background-color: #1A5276;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+.details{
+    width: 30vw;
+    height:94vh;
+    background-color: #2980B9;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+.head{
+    width: 100%;
+    height: 10vh;
+    background-color: #5DADE2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    
+}
+.dates{
+    display: flex;
+    width: 28vw;
+}
+label{
+    margin-top: 15px;
+}
+.btn{
+    width: 50%;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #0f3b5b;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* css for temp-1 */
+
+.resume-container1 {
+    display: flex;
+    max-width: 43vw;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-column1 {
+    width: 30%;
+    background: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic1 img {
+    width: 100px;
+    height: 100px;
+    margin-left: 33px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+#name2{
+    font-size: 30px;
+}
+#jobT2{
+    font-size: 20px;
+}
+
+.contact1, .dob1, .education1, .languages1 {
+    margin-bottom: 20px;
+}
+
+.right-column1 {
+    width: 40vw;
+    padding: 20px;
+}
+
+.about1, .experience1, .skills1 {
+    margin-bottom: 20px;
+}
+
+.resume-container1 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+}
+
+.timeline1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline1 .event1 {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline1 .event1:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+}
+#none{
+    display: none;
+    background-color:  #1A5276;
+}
+
+
+/* css for temp-2 */
+
+.resume-container2 {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header2 {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.profile-pic2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.main-content2 {
+    display: flex;
+    padding: 20px;
+}
+
+.left-column2 {
+    width: 30%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.right-column2 {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.resume-container2 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+/* css for temp-3 */
+
+.resume-container3 {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.cards3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card3 {
+    flex: 1 1 calc(50% - 20px);
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container3 h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* css for input field */
+.input-group__input {
+    margin-top: 15px;
+    text-align: center;
+    color: #030303;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-style: none;
+    outline: none;
+    width: 20vw;
+    padding: 0.8em 1em;
+    border: 0.25em solid transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 1.8em;
+    background-size: 200% 100%;
+    transition: background-position 0.8s ease-out;
+}
+  .input-group__input:hover {
+    background-position: 100% 0;
+}
+.input-group__input:focus {
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+}
